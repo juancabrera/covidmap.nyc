@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta content="chrome=1" http-equiv="X-UA-Compatible" />
+  <meta charset="utf-8" />
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NYC Covid Map</title>
+  <link href="images/favicon.png" rel="shortcut icon" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet" />
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <a href="/"></a>
+      </div>
+      <nav>
+        <a href="/#how-it-works">How it works</a>
+        <a href="/#about">About</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+      </nav>
+    </header>
+    <section class="hero">
+      <div class="left">
+        <h1>Get the latest COVID <br />updates on the go</h1>
+        <h3>Explore daily COVID-19 data around you and get<br />notifications when your location change.</h3>
+        <div class="stores">
+          <div class="button">
+            <a href='#' target='_blank'>
+              <img alt='Get it on Google Play' class='link' src='/images/google-play.png' />
+            </a>
+          </div>
+          <div class="button">
+            <img alt='Get it on Google Play' class='link' src='/images/app-store.png' />
+            <span>coming soon</span>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div class="phone">
+          <div class="pixel4"></div>
+          <div class="screen">
+            <a href="#" class="play"></a>
+            <!-- <div class="ss1"></div> -->
+            <video class="video" width="100%" height="100%" loop>
+              <source src="/videos/rec.mp4.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <a name="how-it-works"></a>
+    <section class="how-it-works">
+      <div class="hr"></div>
+      <h1>How it works ?</h1>
+      <div class="wrapper">
+        <div class="right">
+          <img src="/images/hiw-notification2.jpg" class="hiw" />
+          <h2>Get notifications based on your zipcode</h2>
+          <p>If you allow location access to the app you will receive notifications as you move from zipcode to zipcode.
+            No data of
+            your location will be shared or saved, it will be used only to give you the most relevant data.
+            <br />If you dont want the app to access your location, that's fine, you can still explore the map.</p>
+        </div>
+        <div class="left">
+          <img src="/images/hiw-explore2.jpg" class="hiw" />
+          <h2>Explore the map</h2>
+          <p>Use the map to explore the latest official COVID-19 data by zipcode. Tap on it and access to the total
+            number of tests preformed, the current active positives cases and the total deaths until today.
+            <br />Data is updated daily with the official COVID data published by NYC.</p>
+        </div>
+      </div>
+    </section>
+
+    <a name="about"></a>
+    <section class="about">
+      <div class="hr"></div>
+      <h1>About</h1>
+      <p>
+        <b>NYC COVID map</b> was designed and developed 100% by two individuals as a personal side project, there are
+        no affiliations to any private or public organizations.
+      </p>
+      <p>
+        Privacy is protected by not saving or sending your location data. Location data is only used to detect if you
+        move from one zip code to another and notify you with the latest COVID data of your current zone. You can still
+        use the app without granting location access permissions.
+      </p>
+      <p>
+        See full <a href="/privacy-policy.html">Privacy Policy</a>
+      </p>
+      <p>
+        For further questions or feedback, please reach out to <a href="mailto:hello@juan.me">hello@juan.me</a>
+      </p>
+    </section>
+  </div>
+  <div class="hr2"></div>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H1XBRB7HXG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-H1XBRB7HXG');
+  </script>
+</body>
+
+</html>

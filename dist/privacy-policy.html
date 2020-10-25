@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta content="chrome=1" http-equiv="X-UA-Compatible" />
+  <meta charset="utf-8" />
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NYC Covid Map</title>
+  <link href="images/favicon.png" rel="shortcut icon" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet" />
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <a href="/"></a>
+      </div>
+      <nav>
+        <a href="/#how-it-works">How it works</a>
+        <a href="/#about">About</a>
+        <a href="/privacy-policy.html">Privacy Policy</a>
+      </nav>
+    </header>
+    <section class="policy">
+      <h1>Privacy Policy</h1>
+      <p>NYC COVID map is a voluntary and anonymous location based mobile app designed to provide you with the latest
+        COVID data around you in order to protect yourself and others from COVID-19.</p>
+      <p>The use of this app is completely voluntary, and it can be downloaded for free on iOS and Android
+        smartphones.</p>
+      <p>Privacy is protected by not saving or sending your location data. Location data is only used to detect if you
+        move from one zip code to another and notify you with the latest COVID data of your current zone. You can
+        still use the app without granting location access permissions.</p>
+
+      <h2>Independent project</h2>
+      <p>NYC COVID map was designed and developed 100% by two individuals as a personal side project, there are no
+        affiliations to any private or public organizations.</p>
+
+      <h2>Data</h2>
+      <p>The app uses only official data released by “The City of New York”:</p>
+      <ul>
+        <li>Zip Code Tabulation Areas, <a
+            href="https://data.cityofnewyork.us/Health/Modified-Zip-Code-Tabulation-Areas-MODZCTA-Map/5fzm-kpwv"
+            target="_blank">from NYC
+            OpenData</a></li>
+        <li>COVID-19 daily data, <a href="https://github.com/nychealth/coronavirus-data" target="_blank">NYC Health
+            Github</a></li>
+      </ul>
+      <p>If location access permission is granted, the app will check your location approximately every 15 minutes to
+        check if you moved into another zip code area, if so, the app will send you a “location changed” notification
+        with the latest COVID data of the current zip code area.</p>
+      <p>If location access permission is declined, you can still use the app and see latest COVID data in other zip
+        codes areas by taping them, you won’t be able to get any notifications.</p>
+      <p>Location data is not saved or sent anywhere, it’s only used for notifications purposes.</p>
+
+      <h2>Resources</h2>
+      <p>For more information visit <a href="http://covidmap.nyc" target="_blank">covidmap.nyc</a>.</p>
+      <p>For further questions or feedback, please reach out to <a href="mailto:hello@juan.me">hello@juan.me</a>.</p>
+      <p>Zip Code Tabulation Areas, <a
+          href="https://data.cityofnewyork.us/Health/Modified-Zip-Code-Tabulation-Areas-MODZCTA-Map/5fzm-kpwv"
+          target="_blank">from NYC
+          OpenData</a>.</p>
+      <p>COVID-19 daily data, <a href="https://github.com/nychealth/coronavirus-data" target="_blank">NYC Health
+          Github</a>.</p>
+    </section>
+  </div>
+  <div class="hr2"></div>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-H1XBRB7HXG"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-H1XBRB7HXG');
+  </script>
+</body>
+
+</html>

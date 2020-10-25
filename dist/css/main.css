@@ -1,0 +1,212 @@
+body {
+  background-color: white;
+  padding: 0;
+  margin: 0; }
+
+.container {
+  max-width: 62rem;
+  margin: auto;
+  padding: 0 3rem; }
+
+header {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2rem; }
+  header .logo {
+    position: relative;
+    display: block;
+    width: 180px;
+    height: 40px;
+    background-image: url("../images/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat; }
+    header .logo a {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0; }
+  header nav {
+    display: flex; }
+    header nav a {
+      margin-left: 2rem;
+      align-self: center;
+      font-size: 1.2rem;
+      text-decoration: none; }
+      header nav a:hover {
+        color: #333; }
+
+.hr2 {
+  display: block;
+  height: 5px;
+  background: linear-gradient(90deg, #23942b 0%, #fab11a 35%, #f83800 100%); }
+
+section {
+  position: relative;
+  margin-bottom: 5rem; }
+  section .hr {
+    position: absolute;
+    top: 0;
+    height: 2px;
+    left: 0;
+    right: 0;
+    background: linear-gradient(90deg, #23942b 0%, #fab11a 35%, #f83800 100%); }
+  section.hero {
+    height: 90vh;
+    display: flex;
+    justify-content: space-between; }
+  section.policy {
+    margin-top: 5rem; }
+  section.how-it-works {
+    margin: 0;
+    padding-top: 6rem;
+    padding-bottom: 6rem; }
+    section.how-it-works .wrapper {
+      display: flex;
+      justify-content: space-between; }
+      section.how-it-works .wrapper .left, section.how-it-works .wrapper .right {
+        width: 40%;
+        align-self: flex-start; }
+    section.how-it-works .hiw {
+      width: 100%; }
+  section.about {
+    margin: 0;
+    padding-top: 6rem;
+    padding-bottom: 6rem; }
+  section .left, section .right {
+    align-self: center; }
+  section .left {
+    padding-bottom: 4rem; }
+  section .stores {
+    margin-top: 3rem;
+    display: flex; }
+    section .stores .button {
+      position: relative;
+      width: 200px;
+      height: 50px; }
+      section .stores .button img {
+        max-height: 50px; }
+  section .phone {
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 640px; }
+    section .phone .pixel4 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: url("../images/pixel4.png");
+      background-size: cover;
+      z-index: 2; }
+    section .phone .screen {
+      position: absolute;
+      top: 34px;
+      right: 10px;
+      bottom: 24px;
+      left: 10px; }
+      section .phone .screen .play {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        top: calc(50% - 90px);
+        left: calc(50% - 75px);
+        background-image: url("../images/play.png");
+        background-size: cover;
+        z-index: 3; }
+      section .phone .screen .ss1 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: url("../images/covidmap1.jpg");
+        background-size: cover; }
+      section .phone .screen .video {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0; }
+
+a {
+  font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  color: #ce684a; }
+
+h1, h2, h3, h4 {
+  color: #333;
+  font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; }
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 700; }
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 700; }
+
+h3 {
+  font-weight: normal;
+  line-height: 1.2;
+  font-size: 1.2rem; }
+
+span {
+  font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-size: 12px;
+  color: #333;
+  display: block; }
+
+p, ul li {
+  font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 1.5em;
+  letter-spacing: 0.01em;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  opacity: 1;
+  transition: all ease-out 750ms; }
+  p.secondary, ul li.secondary {
+    font-size: 16px;
+    line-height: 28px; }
+  p span.wrapper .highlighted, ul li span.wrapper .highlighted {
+    color: #ff8966; }
+  p span.wrapper .detail, ul li span.wrapper .detail {
+    display: none;
+    color: #706c61; }
+  p span.wrapper:hover .detail, ul li span.wrapper:hover .detail {
+    display: inline; }
+
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center; }
+    header nav {
+      margin-top: 3rem; }
+      header nav a {
+        font-size: 1rem;
+        text-align: center;
+        margin-left: 1rem; }
+      header nav a:first-child {
+        margin-left: 0; }
+  section.hero {
+    flex-direction: column;
+    align-items: center;
+    height: auto; }
+    section.hero .left, section.hero .right {
+      width: 100%; }
+  section.how-it-works .wrapper {
+    flex-direction: column;
+    align-items: center; }
+    section.how-it-works .wrapper .left, section.how-it-works .wrapper .right {
+      width: 100%; }
+    section.how-it-works .wrapper .right {
+      margin-bottom: 6rem; } }

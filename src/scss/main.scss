@@ -1,0 +1,337 @@
+body {
+  background-color: white;
+  // padding: 5% 8% 0 8%;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 62rem;
+  margin: auto;
+  padding: 0 3rem;
+}
+
+header {
+  // border: 1px green solid;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 2rem;
+
+  .logo {
+    position: relative;
+    display: block;
+    width: 180px;
+    height: 40px;
+    background-image: url('../images/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    // border: 1px green solid;
+
+    a {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+  }
+  }
+
+  nav {
+    display: flex;
+    // border: 1px green solid;
+    
+    a {
+      margin-left: 2rem;
+      align-self: center;
+      font-size: 1.2rem;
+      text-decoration: none;
+      // border: 1px green solid;
+
+      &:hover {
+        color: #333;
+      }
+    }
+  }
+}
+
+.hr2 {
+  display: block;
+  height: 5px;
+  background: linear-gradient(90deg, rgba(35,148,43,1) 0%, rgba(250,177,26,1) 35%, rgba(248,56,0,1) 100%);
+}
+
+section {
+  position: relative;
+  margin-bottom: 5rem;
+  // border: 1px green solid;
+
+  .hr {
+    position: absolute;
+    top: 0;
+    height: 2px;
+    left: 0;
+    right: 0;
+    background: linear-gradient(90deg, rgba(35,148,43,1) 0%, rgba(250,177,26,1) 35%, rgba(248,56,0,1) 100%);
+
+  }
+
+  &.hero {
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    // border: 1px solid #333;
+    
+      
+  }
+
+  &.policy {
+    margin-top: 5rem;
+  }
+
+  &.how-it-works {
+    margin: 0;
+
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    // border: 1px solid #333;
+
+    .wrapper {
+      display: flex;
+      justify-content: space-between;  
+
+      .left, .right {
+        width: 40%;
+        align-self: flex-start;
+      }
+    }
+
+    .hiw {
+      width: 100%;
+    }
+  }
+
+  &.about {
+    margin: 0;
+
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .left, .right {
+    align-self: center;
+    // border: 1px solid red;
+  }
+
+  .left {
+    padding-bottom: 4rem;
+  }
+
+  // .right {
+  //   // min-width: 300px;
+  // }
+
+  .stores {
+    margin-top: 3rem;
+    display: flex;
+    .button {
+      position: relative;
+      width: 200px;
+      height: 50px;
+      // border:1px solid green;
+
+      img {
+        max-height: 50px;
+      }
+    }
+  }
+
+  .phone {
+      display: block;
+      position: relative;
+      width: 300px;
+      height: 640px;
+
+      .pixel4 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: url('../images/pixel4.png');
+        background-size: cover;
+        z-index: 2;;
+      }
+
+      .screen {
+        // border: 1px solid red;
+        position: absolute;
+        top: 34px;
+        right: 10px;
+        bottom: 24px;
+        left: 10px;
+
+        .play {
+          width: 150px;
+          height: 150px;
+          position: absolute;
+          top: calc(50% - 90px);
+          left: calc(50% - 75px);
+          background-image: url('../images/play.png');
+          background-size: cover;
+          z-index: 3;
+        }
+
+        .ss1 {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-image: url('../images/covidmap1.jpg');
+          background-size: cover;
+        }
+
+        .video {
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+        }
+      }
+    }
+  }
+
+
+a {
+  font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';;
+  // color: #ff8966;
+  color: #ce684a;
+  
+  // font-family: Roboto Mono;
+  // font-style: normal;
+  // font-weight: normal;
+  // font-size: 1rem;
+  // line-height: 1.2rem;
+  // letter-spacing: 0.01em;
+}
+
+h1, h2, h3, h4 {
+  // color: #f8f4e3;
+  color: #333;
+  font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: normal;
+  line-height: 1.2;
+  font-size: 1.2rem;
+}
+
+
+span {
+  font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';;
+  font-size: 12px;
+  // color: #f8f4e3;
+  color: #333;
+  display: block;
+}
+
+p, ul li {
+  // font-family: Roboto Mono;
+  font-family: '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';;
+
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+  line-height: 1.5em;
+  letter-spacing: 0.01em;
+  // color: #f8f4e3;
+  color: #333;
+
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  opacity: 1;
+  transition: all ease-out 750ms;
+
+  &.secondary {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  span.wrapper {
+    .highlighted {
+      color: #ff8966;
+    }
+    .detail {
+      display: none;
+      color: #706c61;
+    }
+
+    &:hover {
+      .detail {
+        display: inline;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+
+    nav {
+      margin-top: 3rem;
+
+      a {
+        font-size: 1rem;
+        text-align: center;
+        margin-left: 1rem;
+
+      }
+
+      a:first-child {
+        margin-left: 0;
+      }
+    }
+  }
+
+  section.hero {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+
+    .left, .right {
+      width: 100%;
+    }
+  }
+
+  section.how-it-works .wrapper{
+    flex-direction: column;
+    align-items: center;
+
+    .left, .right {
+      width: 100%;
+    }
+
+    .right {
+      margin-bottom: 6rem;
+    }
+  }
+}
